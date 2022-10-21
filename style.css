@@ -52,34 +52,32 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
 #play-again
 {
 
-  appearance: button;
-  background-color: #1899D6;
-  border: 2px solid black ;
-  border-radius: 16px;
-  border-width: 0 0 4px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: din-round,sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: .8px;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  overflow: visible;
-  padding: 13px 16px;
-  text-align: center;
-  text-transform: uppercase;
-  touch-action: manipulation;
-  transform: translateZ(0);
-  transition: filter .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  width: 150px;
+  
+    
+   
+      align-items: center;
+      background: #FFFFFF;
+      border: 0 solid #E2E8F0;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      box-sizing: border-box;
+      color: #1A202C;
+      display: inline-flex;
+      font-family: Inter, sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      height: 45px;
+      justify-content: center;
+      line-height: 24px;
+      overflow-wrap: break-word;
+      padding: 24px;
+      text-decoration: none;
+      width: 150px;
+      border-radius: 8px;
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+   
 }
 
 
