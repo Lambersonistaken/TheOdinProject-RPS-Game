@@ -4,7 +4,8 @@ const paperImg = document.getElementById("paper")
 const scissorImg = document.getElementById("scissor")
 const alertMessage = document.getElementById("message")
 const scoreBoard = document.getElementById("score-title")
-
+const button = document.getElementById("play-again")
+const buttonDiv = document.querySelector(".playAgain")
 
 
 
@@ -17,8 +18,14 @@ let playerScore = 0;
 let computerScore = 0;
 let gameEnded = false
 
-
+buttonDiv.style.display = "none"
 scoreBoard.innerHTML = `Computer ${computerScore} - Player ${playerScore}`
+
+
+button.addEventListener("click", () => {
+    playAgain()
+    buttonDiv.style.display = "none"
+})
 
 
 function getComputerChoice() {
@@ -96,16 +103,28 @@ function checkResult(){
             if(computerScore > playerScore){
                 gameEnded = true
                 alertMessage.textContent = "Computer won the whole game!"
+                buttonDiv.style.display = "block"
             }
             else if(playerScore > computerScore) {
                 gameEnded = true
                 alertMessage.textContent = "Player won the whole game!"
+                buttonDiv.style.display = "block"
             }
             else {
                 gameEnded = true
                 alertMessage.textContent = "Whole Game Tied Up, Play Again!"
+                buttonDiv.style.display = "block"
             }
             
         }
     }
    
+function playAgain() {
+    playerScore = 0;
+    computerScore = 0;
+    scoreBoard.innerHTML = `Computer ${computerScore} - Player ${playerScore}`
+    alertMessage.textContent = ""
+    getComputerChoice()
+    gameEnded = false;
+
+}
