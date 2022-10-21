@@ -1,2 +1,2 @@
 # TheOdinProject-RPS-Game
-Simple Rock-Paper-Scissor game.
+Simple Rock-Paper-Scissor game.   
